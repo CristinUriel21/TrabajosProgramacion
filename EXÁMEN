@@ -1,0 +1,152 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+
+namespace Examen_2Parcial
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            DIA.Items.Add("1");
+            DIA.Items.Add("2");
+            DIA.Items.Add("3");
+            DIA.Items.Add("4");
+            DIA.Items.Add("5");
+            DIA.Items.Add("6");
+            DIA.Items.Add("7");
+            DIA.Items.Add("8");
+            DIA.Items.Add("9");
+            DIA.Items.Add("10");
+            DIA.Items.Add("11");
+            DIA.Items.Add("12");
+            DIA.Items.Add("13");
+            DIA.Items.Add("14");
+            DIA.Items.Add("15");
+            DIA.Items.Add("16");
+            DIA.Items.Add("17");
+            DIA.Items.Add("18");
+            DIA.Items.Add("19");
+            DIA.Items.Add("20");
+            DIA.Items.Add("21");
+            DIA.Items.Add("22");
+            DIA.Items.Add("23");
+            DIA.Items.Add("24");
+            DIA.Items.Add("25");
+            DIA.Items.Add("26");
+            DIA.Items.Add("27");
+            DIA.Items.Add("28");
+            DIA.Items.Add("29");
+            DIA.Items.Add("30");
+            DIA.Items.Add("31");
+
+
+
+        }
+
+        private void JULIO_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DIA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTNSIGNO_Click(object sender, EventArgs e)
+        {
+
+
+            if ((MARZO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 21) || (ABRIL.Checked && Convert.ToInt32(DIA.SelectedItem) <= 19))
+            {
+                MessageBox.Show("ERES ARIES");
+            }
+            if ((ABRIL.Checked && Convert.ToInt32(DIA.SelectedItem) >= 20) || (MAYO.Checked && Convert.ToInt32(DIA.SelectedItem) <= 20))
+            {
+                MessageBox.Show("ERES TAURO");
+            }
+            if ((MAYO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 21) || (JUNIO.Checked && Convert.ToInt32(DIA.SelectedItem) <= 20))
+            {
+                MessageBox.Show("ERES GEMINIS");
+            }
+            if ((JUNIO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 21) || (JULIO.Checked && Convert.ToInt32(DIA.SelectedItem) <= 22))
+            {
+                MessageBox.Show("ERES CANCER");
+            }
+            if ((JULIO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 23) || (AGOSTO.Checked && Convert.ToInt32(DIA.SelectedItem) <= 22))
+            {
+                MessageBox.Show("ERES LEO");
+            }
+            if ((AGOSTO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 23) || (SEPTIEMBRE.Checked && Convert.ToInt32(DIA.SelectedItem) <= 22))
+            {
+                MessageBox.Show("ERES VIRGO");
+            }
+            if ((SEPTIEMBRE.Checked && Convert.ToInt32(DIA.SelectedItem) >= 20) || (OCTUBRE.Checked && Convert.ToInt32(DIA.SelectedItem) <= 20))
+            {
+                MessageBox.Show("ERES LIBRA");
+            }
+            if ((OCTUBRE.Checked && Convert.ToInt32(DIA.SelectedItem) >= 2) || (NOVIEMBRE.Checked && Convert.ToInt32(DIA.SelectedItem) <= 21))
+            {
+                MessageBox.Show("ERES ESCORPION");
+            }
+            if ((NOVIEMBRE.Checked && Convert.ToInt32(DIA.SelectedItem) >= 22) || (DICIEMBRE.Checked && Convert.ToInt32(DIA.SelectedItem) <= 21))
+            {
+                MessageBox.Show("ERES SAGITARIO");
+            }
+            if ((DICIEMBRE.Checked && Convert.ToInt32(DIA.SelectedItem) >= 22) || (ENERO.Checked && Convert.ToInt32(DIA.SelectedItem) <= 19))
+            {
+                MessageBox.Show("ERES CAPRICORNIO");
+            }
+            if ((ENERO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 20) || (FEBRERO.Checked && Convert.ToInt32(DIA.SelectedItem) <= 18))
+            {
+                MessageBox.Show("ERES ACUARIO");
+            }
+            if ((FEBRERO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 19) || (MARZO.Checked && Convert.ToInt32(DIA.SelectedItem) <= 20))
+            {
+                MessageBox.Show("ERES PISCIS");
+            }
+           
+            }
+
+        
+
+
+
+
+
+
+        private void ENERO_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FEBRERO_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
