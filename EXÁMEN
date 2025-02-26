@@ -15,6 +15,7 @@ namespace Examen_2Parcial
     {
         public Form1()
         {
+//en esta parte de aqui es donde agrego los dias del 1 al 31 al combobox
             InitializeComponent();
             DIA.Items.Add("1");
             DIA.Items.Add("2");
@@ -64,7 +65,7 @@ namespace Examen_2Parcial
 
         private void BTNSIGNO_Click(object sender, EventArgs e)
         {
-
+//en esta parte de aqui pongo los if con la condición de que la persona nacio en cierta fecha apareceta un message box que te diga tu signo
 
             if ((MARZO.Checked && Convert.ToInt32(DIA.SelectedItem) >= 21) || (ABRIL.Checked && Convert.ToInt32(DIA.SelectedItem) <= 19))
             {
