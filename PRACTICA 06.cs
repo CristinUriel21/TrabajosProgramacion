@@ -23,9 +23,9 @@ namespace LOGIN_Y_BASE_DE_DATOS
             SqlConnection conexion = new SqlConnection(@"server=CRISTIANRH\SQLEXPRESS; database=MiLogin; INTEGRATED SECURITY=true"
 );
             conexion.Open();
-            SqlCommand cmd = new SqlCommand(" SELECT username, pass FROM registro WHERE username=@username AND pass=@pass",
+            SqlCommand cmd = new SqlCommand(" SELECT Username, pass FROM registro WHERE Username=@Username AND pass=@pass",
                 conexion);
-            cmd.Parameters.AddWithValue("@username", txtusuario.Text.Trim());
+            cmd.Parameters.AddWithValue("@Username", txtusuario.Text.Trim());
             cmd.Parameters.AddWithValue("@pass", txtpassword.Text.Trim());
 
             SqlDataReader Lector = cmd.ExecuteReader();
@@ -63,6 +63,14 @@ namespace LOGIN_Y_BASE_DE_DATOS
         private void btnregister_Click(object sender, EventArgs e)
         {
             Login();
+        }
+
+        private void btnregistrar_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+
         }
     }
 }
